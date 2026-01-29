@@ -98,7 +98,7 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
             <div>
               <img
-                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="public/segu.jpg"
                 alt="Branding solutions showcase"
                 className="w-full rounded-lg"
               />

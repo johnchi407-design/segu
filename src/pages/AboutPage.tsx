@@ -53,7 +53,7 @@ const AboutPage = () => {
 
             <div className="relative animate-slide-in-right">
               <img
-                src="/about-image.jpg"
+                src="public/segu.jpg"
                 alt="Modern office workspace"
                 className="aspect-square w-full object-cover rounded-lg"
               />
