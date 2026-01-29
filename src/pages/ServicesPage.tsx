@@ -11,10 +11,11 @@ import {
   Newspaper,
   BookOpen,
   Briefcase,
-  Layers,
+   
   MessageSquare,
   Target,
   Rocket,
+  Camera,
 } from 'lucide-react';
 import Footer from '../components/Footer';
 
@@ -66,6 +67,12 @@ const ServicesPage = () => {
         'Website branding, social media identity, UX/UI consulting, and digital asset creation.',
       icon: Globe,
     },
+    {
+    title: 'Photography & Videography',
+    description:
+      'Corporate photography, studio photography, product photography, and professional videography to showcase your brand with clarity and impact.',
+    icon: Camera,
+  },
     {
       title: 'Brand Roll-out & Management',
       description:
