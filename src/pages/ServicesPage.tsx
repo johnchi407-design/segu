@@ -23,25 +23,25 @@ import Footer from '../components/Footer';
 const ServicesPage = () => {
   const [activeImage, setActiveImage] = useState<string | null>(null);
   const brandingSolutions = [
-    { icon: Globe, title: 'Web Development', color: 'text-orange-500' },
-    { icon: Monitor, title: 'Website Design', color: 'text-orange-500' },
-    { icon: Megaphone, title: 'Billboard Installation', color: 'text-orange-500' },
-    { icon: Image, title: 'Contra Vision', color: 'text-orange-500' },
-    { icon: Globe, title: 'Entertainment Websites', color: 'text-orange-500' },
-    { icon: FileText, title: 'DTF Printing', color: 'text-orange-500' },
-    { icon: BookOpen, title: 'Informational Websites', color: 'text-orange-500' },
-    { icon: ShoppingCart, title: 'E-commerce Websites', color: 'text-orange-500' },
+    { icon: Globe, title: 'Web Development', color: 'text-orange-500', image: '/branding1.PNG' },
+    { icon: Monitor, title: 'Website Design', color: 'text-orange-500', image: '/branding1.PNG' },
+    { icon: Megaphone, title: 'Billboard Installation', color: 'text-orange-500', image: '/branding1.PNG' },
+    { icon: Image, title: 'Contra Vision', color: 'text-orange-500', image: '/graphic.PNG' },
+    { icon: Globe, title: 'Entertainment Websites', color: 'text-orange-500', image: '/branding1.PNG' },
+    { icon: FileText, title: 'DTF Printing', color: 'text-orange-500', image: '/graphic.PNG' },
+    { icon: BookOpen, title: 'Informational Websites', color: 'text-orange-500', image: '/branding1.PNG' },
+    { icon: ShoppingCart, title: 'E-commerce Websites', color: 'text-orange-500', image: '/branding1.PNG' },
   ];
 
   const graphicDesign = [
-    { icon: MessageSquare, title: 'Social Media Design' },
-    { icon: Newspaper, title: 'Blog Graphics' },
-    { icon: Target, title: 'Logo Design' },
-    { icon: Briefcase, title: 'Portfolios' },
-    { icon: FileText, title: 'Flyers' },
-    { icon: BookOpen, title: 'Educational Materials' },
-    { icon: CreditCard, title: 'Business Cards' },
-    { icon: Newspaper, title: 'News Graphics' },
+    { icon: MessageSquare, title: 'Social Media Design', image: '/graphic.PNG' },
+    { icon: Newspaper, title: 'Blog Graphics', image: '/graphic.PNG' },
+    { icon: Target, title: 'Logo Design', image: '/graphic.PNG' },
+    { icon: Briefcase, title: 'Portfolios', image: '/branding1.PNG' },
+    { icon: FileText, title: 'Flyers', image: '/graphic.PNG' },
+    { icon: BookOpen, title: 'Educational Materials', image: '/graphic.PNG' },
+    { icon: CreditCard, title: 'Business Cards', image: '/graphic.PNG' },
+    { icon: Newspaper, title: 'News Graphics', image: '/graphic.PNG' },
   ];
 
   const coreServices = [
@@ -126,7 +126,8 @@ const ServicesPage = () => {
                     return (
                       <div
                         key={index}
-                        className="bg-black p-4 rounded-lg hover:bg-gray-800 transition-all duration-300 group cursor-pointer"
+                        onClick={() => setActiveImage(service.image)}
+                        className="bg-black p-4 rounded-lg hover:bg-gray-800 transition-all duration-300 group cursor-pointer hover:shadow-lg hover:shadow-orange-500/20"
                       >
                         <Icon
                           size={28}
@@ -156,7 +157,8 @@ const ServicesPage = () => {
                     return (
                       <div
                         key={index}
-                        className="bg-black p-4 rounded-lg hover:bg-gray-800 transition-all duration-300 group cursor-pointer"
+                        onClick={() => setActiveImage(service.image)}
+                        className="bg-black p-4 rounded-lg hover:bg-gray-800 transition-all duration-300 group cursor-pointer hover:shadow-lg hover:shadow-orange-500/20"
                       >
                         <Icon
                           size={28}
@@ -179,7 +181,10 @@ const ServicesPage = () => {
               </div>
             </div>
 
-            <div className="bg-black p-6 rounded-lg">
+            <div
+              onClick={() => setActiveImage('/branding1.PNG')}
+              className="bg-black p-6 rounded-lg cursor-pointer hover:bg-gray-900 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20"
+            >
               <div className="flex items-center justify-center space-x-3">
                 <Smartphone size={32} className="text-orange-500" />
                 <h2 className="text-2xl font-bold text-white">App Development</h2>
