@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   Globe,
   Palette,
@@ -11,7 +12,7 @@ import {
   Newspaper,
   BookOpen,
   Briefcase,
-   
+
   MessageSquare,
   Target,
   Rocket,
@@ -20,6 +21,7 @@ import {
 import Footer from '../components/Footer';
 
 const ServicesPage = () => {
+  const [activeImage, setActiveImage] = useState<string | null>(null);
   const brandingSolutions = [
     { icon: Globe, title: 'Web Development', color: 'text-orange-500' },
     { icon: Monitor, title: 'Website Design', color: 'text-orange-500' },
@@ -48,36 +50,42 @@ const ServicesPage = () => {
       description:
         'Market research, competitor analysis, and positioning frameworks that define clear brand differentiation.',
       icon: Target,
+      image: '/branding1.PNG',
     },
     {
       title: 'Visual Identity & Design',
       description:
         'Logo creation, corporate identity systems, packaging, and marketing collateral for consistency and impact.',
       icon: Palette,
+      image: '/branding1.PNG',
     },
     {
       title: 'Messaging & Tone of Voice',
       description:
         'Brand narratives, taglines, key messages, and editorial guidelines for clear and engaging communication.',
       icon: MessageSquare,
+      image: '/graphic.PNG',
     },
     {
       title: 'Digital Branding & Experience',
       description:
         'Website branding, social media identity, UX/UI consulting, and digital asset creation.',
       icon: Globe,
+      image: '/branding1.PNG',
     },
     {
     title: 'Photography & Videography',
     description:
       'Corporate photography, studio photography, product photography, and professional videography to showcase your brand with clarity and impact.',
     icon: Camera,
+    image: '/graphic.PNG',
   },
     {
       title: 'Brand Roll-out & Management',
       description:
         'Launch campaigns, internal brand training, and ongoing governance across all brand touchpoints.',
       icon: Rocket,
+      image: '/branding1.PNG',
     },
   ];
 
@@ -191,7 +199,8 @@ const ServicesPage = () => {
                   return (
                     <div
                       key={index}
-                      className="bg-black p-8 rounded-lg hover:border-orange-500 border-2 border-transparent transition-all duration-300"
+                      onClick={() => setActiveImage(service.image)}
+                      className="bg-black p-8 rounded-lg hover:border-orange-500 border-2 border-transparent transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-orange-500/20"
                     >
                       <Icon size={40} className="text-orange-500 mb-4" />
                       <h3 className="text-xl font-bold text-white mb-3">
@@ -208,6 +217,19 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
+
+      {activeImage && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={() => setActiveImage(null)}
+        >
+          <img
+            src={activeImage}
+            alt="Service preview"
+            className="max-w-3xl w-full rounded-lg"
+          />
+        </div>
+      )}
 
       <Footer />
     </>
