@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Facebook, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -33,6 +34,30 @@ const Footer = () => {
               <div className="pt-4">
                 <p className="text-orange-500 font-medium mb-2">Greenhills, Randfontein, South Africa</p>
                 <p className="text-gray-400">info@segullah.co.za</p>
+              </div>
+
+              <div className="pt-6">
+                <h3 className="text-xl font-bold text-white mb-4">Connect With Us</h3>
+                <div className="flex space-x-4">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61582498389272"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all duration-300 group"
+                    aria-label="Visit our Facebook page"
+                  >
+                    <Facebook size={24} className="text-white group-hover:scale-110 transition-transform" />
+                  </a>
+                  <a
+                    href="https://wa.me/27662222656"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all duration-300 group"
+                    aria-label="Chat with us on WhatsApp"
+                  >
+                    <MessageCircle size={24} className="text-white group-hover:scale-110 transition-transform" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
