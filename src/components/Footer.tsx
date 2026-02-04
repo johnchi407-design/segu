@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 import { Facebook, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
@@ -19,46 +19,66 @@ const Footer = () => {
               <p className="text-gray-400 leading-relaxed">
                 Strategic Branding, Signage & Visual Communication
               </p>
-              <div className="space-y-4">
-            <h3 className="text-xl font-bold text-white">Leadership</h3>
-            <p className="text-gray-400">CEO: Eugene Mudila</p>
-            <p className="text-gray-400">Director: Chama Bwalya</p>
-          </div>
 
-  <div className="space-y-4">
-            <h3 className="text-xl font-bold text-white">Contact & Locations</h3>
-            <p className="text-gray-400">Pretoria: 066 222 2656</p>
-            <p className="text-gray-400">Johannesburg: 060 456 3045</p>
-            <p className="text-gray-400">Lusaka, Zambia: +260 97 807 9443</p>
-          </div>
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-white">Leadership</h3>
+                <p className="text-gray-400">CEO: Eugene Mudila</p>
+                <p className="text-gray-400">Director: Chama Bwalya</p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-white">Contact & Locations</h3>
+                <p className="text-gray-400">Pretoria: 066 222 2656</p>
+                <p className="text-gray-400">Johannesburg: 060 456 3045</p>
+                <p className="text-gray-400">Lusaka, Zambia: +260 97 807 9443</p>
+              </div>
+
               <div className="pt-4">
-                <p className="text-orange-500 font-medium mb-2">Greenhills, Randfontein, South Africa</p>
+                <p className="text-orange-500 font-medium mb-2">
+                  Greenhills, Randfontein, South Africa
+                </p>
                 <p className="text-gray-400">info@segullah.co.za</p>
               </div>
 
               <div className="pt-6">
                 <h3 className="text-xl font-bold text-white mb-4">Connect With Us</h3>
                 <div className="flex space-x-4">
+
+                  {/* Facebook */}
                   <a
                     href="https://www.facebook.com/profile.php?id=61582498389272"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all duration-300 group"
+                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center 
+                               transition-all duration-300 group hover:scale-110"
                     aria-label="Visit our Facebook page"
                   >
-                    <Facebook size={24} className="text-white group-hover:scale-110 transition-transform" />
+                    <img
+                      src="/icons/facebook.svg"
+                      alt="Facebook"
+                      className="w-6 h-6"
+                    />
                   </a>
+
+                  {/* WhatsApp */}
                   <a
                     href="https://wa.me/27662222656"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all duration-300 group"
+                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center 
+                               transition-all duration-300 group hover:scale-110"
                     aria-label="Chat with us on WhatsApp"
                   >
-                    <MessageCircle size={24} className="text-white group-hover:scale-110 transition-transform" />
+                    <img
+                      src="/icons/whatsapp.svg"
+                      alt="WhatsApp"
+                      className="w-6 h-6"
+                    />
                   </a>
+
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -92,6 +112,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
       </div>
     </footer>
   );
