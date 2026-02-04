@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 import { Facebook, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
@@ -49,13 +49,14 @@ const Footer = () => {
                     href="https://www.facebook.com/profile.php?id=61582498389272"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all duration-300 group"
+                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center 
+                               transition-all duration-300 group hover:scale-110"
                     aria-label="Visit our Facebook page"
                   >
                     <img
-                      src="/facebook.jpg"
+                      src="/icons/facebook.svg"
                       alt="Facebook"
-                      className="w-6 h-6 object-contain group-hover:scale-110 transition-transform"
+                      className="w-6 h-6"
                     />
                   </a>
 
@@ -64,13 +65,14 @@ const Footer = () => {
                     href="https://wa.me/27662222656"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all duration-300 group"
+                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center 
+                               transition-all duration-300 group hover:scale-110"
                     aria-label="Chat with us on WhatsApp"
                   >
                     <img
-                      src="/whatsapp.PNG"
+                      src="/icons/whatsapp.svg"
                       alt="WhatsApp"
-                      className="w-6 h-6 object-contain group-hover:scale-110 transition-transform"
+                      className="w-6 h-6"
                     />
                   </a>
 
