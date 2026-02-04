@@ -56,7 +56,7 @@ const Footer = () => {
                     <img
                       src="/icons/facebook.svg"
                       alt="Facebook"
-                      className="w-6 h-6"
+                      className="w-10 h-10"
                     />
                   </a>
 
@@ -72,7 +72,7 @@ const Footer = () => {
                     <img
                       src="/icons/whatsapp.svg"
                       alt="WhatsApp"
-                      className="w-6 h-6"
+                      className="w-10 h-10"
                     />
                   </a>
 
