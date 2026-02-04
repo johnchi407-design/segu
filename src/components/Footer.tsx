@@ -49,13 +49,15 @@ const Footer = () => {
                     href="https://www.facebook.com/profile.php?id=61582498389272"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all duration-300 group"
+                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center
+                               border border-gray-300 hover:bg-gray-100
+                               transition-all duration-300 group"
                     aria-label="Visit our Facebook page"
                   >
                     <img
-                      src="/facebook.jpg"
+                      src="/facebook1.png"
                       alt="Facebook"
-                      className="w-6 h-6 object-contain group-hover:scale-110 transition-transform"
+                      className="w-9 h-9 group-hover:scale-110 transition-transform"
                     />
                   </a>
 
@@ -64,13 +66,15 @@ const Footer = () => {
                     href="https://wa.me/27662222656"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all duration-300 group"
+                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center
+                               border border-gray-300 hover:bg-gray-100
+                               transition-all duration-300 group"
                     aria-label="Chat with us on WhatsApp"
                   >
                     <img
-                      src="/whatsapp.PNG"
+                      src="/whatsapp1.png"
                       alt="WhatsApp"
-                      className="w-10 h-10 object-contain group-hover:scale-110 transition-transform"
+                      className="w-9 h-9 group-hover:scale-110 transition-transform"
                     />
                   </a>
 
