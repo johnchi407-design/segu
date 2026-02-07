@@ -43,7 +43,7 @@ const GalleryPage = () => {
         },
         {
           title: 'Signage',
-          images: ['/signage.jpg', '/signage1.jpg', '/billboard.jpg', '/large.jpg'],
+          images: ['/signage.jpg', '/sinage1.jpg', '/billboard.jpg', '/large.jpg'],
         },
          {
           title: 'Teardrops',
