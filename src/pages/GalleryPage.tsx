@@ -72,11 +72,11 @@ const GalleryPage = () => {
         },
         {
           title: 'Blog Graphics',
-          images: ['/logos.jpg', '/branding1.PNG', '/large.jpg', '/billboard.jpg'],
+          images: ['/large.jpg', '/branding1.PNG', '/large.jpg', '/billboard.jpg'],
         },
         {
           title: 'Logo Design',
-          images: ['/graphic.PNG', '/branding1.PNG', '/large.jpg', '/billboard.jpg'],
+          images: ['/logos.jpg', '/branding1.PNG', '/large.jpg', '/billboard.jpg'],
         },
         {
           title: 'Portfolios',
