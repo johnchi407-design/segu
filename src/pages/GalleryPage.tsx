@@ -39,15 +39,23 @@ const GalleryPage = () => {
       services: [
         {
           title: 'Billboard Installation',
-          images: ['/billboard.jpg', '/branding1.PNG', '/graphic.PNG', '/large.jpg'],
+          images: ['/billboard.jpg', '/bill.jpg', '/bill1.jpg', '/bill2.jpg'],
         },
         {
-          title: 'Contra Vision',
-          images: ['/graphic.PNG', '/branding1.PNG', '/billboard.jpg', '/large.jpg'],
+          title: 'Signage',
+          images: ['/signage.jpg', '/signage1.jpg', '/billboard.jpg', '/large.jpg'],
+        },
+         {
+          title: 'Teardrops',
+          images: ['/teardrops.jpg', '/bill.jpg', '/bill1.jpg', '/bill2.jpg'],
         },
         {
           title: 'DTF Printing',
           images: ['/large.jpg', '/graphic.PNG', '/branding1.PNG', '/billboard.jpg'],
+        },
+         {
+          title: 'Mats',
+          images: ['/mats.jpg', '/bill.jpg', '/bill1.jpg', '/bill2.jpg'],
         },
       ],
     },
@@ -64,7 +72,7 @@ const GalleryPage = () => {
         },
         {
           title: 'Blog Graphics',
-          images: ['/graphic.PNG', '/branding1.PNG', '/large.jpg', '/billboard.jpg'],
+          images: ['/logos.jpg', '/branding1.PNG', '/large.jpg', '/billboard.jpg'],
         },
         {
           title: 'Logo Design',
@@ -122,7 +130,7 @@ const GalleryPage = () => {
       services: [
         {
           title: 'Photography & Videography',
-          images: ['/graphic.PNG', '/branding1.PNG', '/large.jpg', '/billboard.jpg'],
+          images: ['/photo.jpg', '/photo1.jpg', '/large.jpg', '/billboard.jpg'],
         },
       ],
     },
